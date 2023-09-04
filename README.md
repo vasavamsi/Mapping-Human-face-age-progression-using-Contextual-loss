@@ -25,7 +25,9 @@ Age 70+ | training_data/elder7/7
 
 Change the defaults arguments in the parameters section of the “train.py” in the repo (scroll to the last
 part of the code.
+
 ❖ Learning parameters can be set as per required.
+
 ❖ Provide the paths to young training data, testing data and validating data which are by default as
 follows:
 
@@ -38,6 +40,7 @@ Young images for Validating | val_dataroot | './val_data/elder2/'
 Provide the path to the older age dataset to training on the aging features from that data and also
 change the train_age parameter to the respective training age. By default the set age is 3 (i.e
 within the age span of 30-39). The path provided in elder_dataroot is './training_data/elder3/3/'.
+
 ❖ Provide the path for the trained checkpoints for generator and discriminator to be saved after
 certain pre-defined (100 by default) epochs. The parameter used is model_dir and the default path
 provided is '.training_saves/checkpoints/'.
