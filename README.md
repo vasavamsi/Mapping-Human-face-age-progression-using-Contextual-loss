@@ -20,6 +20,7 @@ Graphical representation of the generator and discriminator architecture.
 
 ## Dataset and pre-trained model checkpoints (for inference)
 CACD dataset - https://bcsiriuschen.github.io/CARC/
+
 UTK face dataset - https://susanqq.github.io/UTKFace/
 
 download and place the model checkpoints from here : https://drive.google.com/drive/folders/1yojmtdgIVWOUFodGlfaf4xYdhrAcSuPm?usp=sharing
