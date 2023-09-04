@@ -92,11 +92,3 @@ Highlights of our work- The formation of wrinkles on the cheeks, Beard whitening
 
 ![facial_details](https://github.com/vasavamsi/Mapping-Human-face-age-progression-using-Contextual-loss/assets/58003228/75f5e5fc-2e41-42aa-8cb1-fb62019347a5)
 
-Age estimation results using pre-trained VGG16 age estimation model
-
-  | Dataset | age-3 | age-4 | age-5 | age-6 | age-7
---- | --- | --- | --- | --- | --- | ---
-Synthesized | CACD Dataset | 30.3988 ± 6.1177 | 39.6783 ± 0.5499 | 52.1785 ± 12.3002 | 56.4529 ± 13.8786 | 77.4484 ± 4.3017
-  | UTKFace | 29.5927 ± 5.3880 | 40.2513 ± 10.5704 | 51.5 ± 12.6375 | 55.5082 ± 13.7190 | 78.2325 ± 4.4575
-Real  |CACD Dataset | 29.9234 ± 4.7330 | 38.2818 ± 7.3171 | 46.9073 ± 8.7357 | 56.0291 ± 10.3238 | 71.9371 ± 12.1049
-  | UTKFace | 29.037 ± 4.2668 | 36.3529 ± 7.0510 | 45.5284 ± 8.6302 | 54.2988 ± 10.5100 | 70.3005 ± 12.959
