@@ -18,9 +18,11 @@ Graphical representation of the generator and discriminator architecture.
 ● Pillow 6.0
 ● Contextual loss module (https://github.com/S-aiueo32/contextual_loss_pytorch)
 
-## Dataset
+## Dataset and pre-trained model checkpoints (for inference)
 CACD dataset - https://bcsiriuschen.github.io/CARC/
 UTK face dataset - https://susanqq.github.io/UTKFace/
+
+download and place the model checkpoints from here : https://drive.google.com/drive/folders/1yojmtdgIVWOUFodGlfaf4xYdhrAcSuPm?usp=sharing
 
 ## Training the model
 
