@@ -15,9 +15,15 @@ Age progression is a process of projection of futuristic aging characteristics o
 ## Training the model
 
 Images in the dataset corresponding to | Path to be moved to
+--- | ---
 Age 20-29 | training_data/elder2/2
+--- | ---
 Age 30-39 | training_data/elder3/3
+--- | ---
 Age 40-49 | training_data/elder4/4
+--- | ---
 Age 50-59 | training_data/elder5/5
+--- | ---
 Age 60-69 | training_data/elder6/6
+--- | ---
 Age 70+ | training_data/elder7/7
