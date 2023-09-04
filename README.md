@@ -4,6 +4,12 @@ This work is completed as a part of Master's Thesis at IIT Gandhinagar
 ## Abstract
 Age progression is a process of projection of futuristic aging characteristics onto the subject face image. This kind of task finds applications in cyber-cell forensics, age-invariant facial recognition, and in entertainment sectors up to a certain extent. Most of the previous works tried projecting similar kinds of texture-based artifacts such as artificial wrinkles and dullness of eyes on the test subjects. Even, the analysis to convince the aging effects, as well as identity preservation in the generated images, is not studied in a detailed manner. In this work, we for the first time used the Attention mechanism in combination with weighted contextual loss to accomplish age progression of the human face. We used Attention UNet Generator architecture with the pyramid architecture of discriminator to aid the realness of the generated images. We have also shown the ablation studies for generators with different blocks in encoder and decoder. By using weighted Contextual loss, we induced the aging artifacts onto the test subject without losing the original identity. We have shown how perceptually close the results are to the real images. Performance evaluation of our work is carried out with the help of external age estimation and identity matching agents for better convincing and reliable quantitative analysis. Our method is robust to occlusion and some regular positions of the faces. This work is done under the guidance and collaboration of the premier R&D organization Center for Development of Advanced Computing (C-DAC), Hyderabad. 
 
+Graphical representation of the generator and discriminator architecture.
+
+![Generator architecture](https://github.com/vasavamsi/Mapping-Human-face-age-progression-using-Contextual-loss/assets/58003228/9ddf11f8-653d-4c99-94a4-f4393bac4c86)
+
+![discriminator](https://github.com/vasavamsi/Mapping-Human-face-age-progression-using-Contextual-loss/assets/58003228/6c56451f-3ce8-4d34-8250-a7e9bfb936ba)
+
 ## Needed installations
 
 ● Pytorch 1.0
@@ -11,6 +17,10 @@ Age progression is a process of projection of futuristic aging characteristics o
 ● Visdom 0.1.8
 ● Pillow 6.0
 ● Contextual loss module (https://github.com/S-aiueo32/contextual_loss_pytorch)
+
+## Dataset
+CACD dataset - https://bcsiriuschen.github.io/CARC/
+UTK face dataset - https://susanqq.github.io/UTKFace/
 
 ## Training the model
 
@@ -67,3 +77,18 @@ checkpoints trained for each age cluster on CACD dataset are stored in the sub-f
 ❖ The default generator checkpoints path provided in netG_pth is './pre-trained_checkpoints/3/netG_epoch_49900.pth'.
 
 ❖ For testing/inferring purposes set is_training parameter to ‘False’.
+
+## Results obtained
+
+Here we have shown the results obtained on UTK and CACD face datasets.
+
+![common_catalogue](https://github.com/vasavamsi/Mapping-Human-face-age-progression-using-Contextual-loss/assets/58003228/3a7ee31e-3d4b-4c0f-aa45-2ca9044cfd1a)
+
+Outputs on occluded images (such as hat, spects etc.) shown below.
+
+![occlusion_pose](https://github.com/vasavamsi/Mapping-Human-face-age-progression-using-Contextual-loss/assets/58003228/5fb8cb61-f919-4d66-9d19-5a2280563164)
+
+Highlights of our work- The formation of wrinkles on the cheeks, Beard whitening, Hair transformation, Eyeline transformation, Intact Lip expressions.
+
+![facial_details](https://github.com/vasavamsi/Mapping-Human-face-age-progression-using-Contextual-loss/assets/58003228/75f5e5fc-2e41-42aa-8cb1-fb62019347a5)
+
