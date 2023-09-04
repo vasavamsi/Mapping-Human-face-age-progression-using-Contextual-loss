@@ -33,4 +33,30 @@ Path for | parameter in code | Default set
 --- | --- | ---
 Young images for Training | young_dataroot | './training_data/elder2/'
 Young images for Testing | test_dataroot | './testing_data/elder2/'
-Young images for Validating | val_dataroot | './val_data/elde
+Young images for Validating | val_dataroot | './val_data/elder2/'
+
+Provide the path to the older age dataset to training on the aging features from that data and also
+change the train_age parameter to the respective training age. By default the set age is 3 (i.e
+within the age span of 30-39). The path provided in elder_dataroot is './training_data/elder3/3/'.
+❖ Provide the path for the trained checkpoints for generator and discriminator to be saved after
+certain pre-defined (100 by default) epochs. The parameter used is model_dir and the default path
+provided is '.training_saves/checkpoints/'.
+❖ Provide a path to save the inferred results for the saved checkpoints. The parameter used is
+train_img_dir and the default path provided is './training_saves/training_imgs/'.
+❖ For training, the boolean parameter is_training should be set “True”.
+❖ If the training is to be resumed from a certain epoch the learning parameters should be changed
+accordingly and the paths to the trained generator and discriminator architecture are to be
+provided as inputs to the parameters "netG_pth" and "netD_pth".
+
+## For Inferring (testing) the model:
+
+❖ The pre-trained weights are already stored in the folder pre-trained_checkpoints. To test on any
+other data (young faces) simply move the data to be tested to “./testing_data/elder2/2”. After the
+inference is done the images will be stored at the path provided as test_img_dir which is set as
+'./results/' by default.
+❖ The pre-trained weights for the different age clusters are saved after 50,000 epochs. The
+checkpoints trained for each age cluster on CACD dataset are stored in the sub-folder named the
+same.
+❖ The default generator checkpoints path provided in netG_pth is
+'./pre-trained_checkpoints/3/netG_epoch_49900.pth'.
+❖ For testing/inferring purposes set is_training parameter to ‘False’.
