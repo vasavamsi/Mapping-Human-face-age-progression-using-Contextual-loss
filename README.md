@@ -22,3 +22,15 @@ Age 40-49 | training_data/elder4/4
 Age 50-59 | training_data/elder5/5
 Age 60-69 | training_data/elder6/6
 Age 70+ | training_data/elder7/7
+
+Change the defaults arguments in the parameters section of the “train.py” in the repo (scroll to the last
+part of the code.
+❖ Learning parameters can be set as per required.
+❖ Provide the paths to young training data, testing data and validating data which are by default as
+follows:
+
+Path for | parameter in code | Default set
+--- | --- | ---
+Young images for Training | young_dataroot | './training_data/elder2/'
+Young images for Testing | test_dataroot | './testing_data/elder2/'
+Young images for Validating | val_dataroot | './val_data/elde
